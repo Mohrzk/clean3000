@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations du Client</title>
+    <link rel="stylesheet" href="index.css"> 
+
+</head>
+<body>
+    <div>
+        <header>
+            <img src='/img/logo-clean3000-transparent.png'>
+        </header>
+    </div>
+    <div>
+    <h1>Avis de passage</h1>
+    <table>
+        <tr>
+            <th>Nom de l'entreprise/ou client</th>
+            <th>Motif de l'intervention</th>
+        </tr>
+        <tr>
+            <td id="nomEntrepriseCell"></td>
+            <td id="motifInterventionCell"></td>
+        </tr>
+    </table>
+</div>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+
+        const clientInfoJSON = urlParams.get("clientInfo");
+
+        const clientInfo = JSON.parse(decodeURIComponent(clientInfoJSON));
+
+        const nomEntrepriseCell = document.getElementById("nomEntrepriseCell");
+        const motifInterventionCell = document.getElementById("motifInterventionCell");
+
+        nomEntrepriseCell.textContent = clientInfo.nomEntreprise;
+        motifInterventionCell.textContent = clientInfo.motifIntervention;
+    </script>
+</body>
+</html>
+

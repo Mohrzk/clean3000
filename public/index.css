@@ -1,0 +1,103 @@
+body {
+  background-image: url('/.img/nettoyagee.png');
+  background-color: rgba(0, 0, 0, 0.3); 
+  background-blend-mode: overlay; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  padding: 10%;
+
+}
+
+div {
+  text-align: center;
+}
+
+.nom-client {
+
+    color: rgb(34, 189, 34);
+    text-decoration: underline;
+    text-decoration-color: rgb(34, 189, 34);
+  
+  }
+
+.motif {
+  
+    color: rgb(34, 189, 34);
+    text-decoration: underline;
+    text-decoration-color: rgb(34, 189, 34);
+    
+}
+
+
+#avis {
+  background-color: hsl(0, 0%, 100%, 0.5);
+  border: solid 3px white;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+  font-size: x-large;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 16px;
+  border: solid 2px rgb(255, 255, 255); 
+}
+
+button {
+  background-color: rgb(34, 189, 34);
+  color: white;
+  border: solid 2px white;
+  border-color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+h3{
+  background-color: white;
+  border: solid 2px white;
+}
+
+/* Ajoutez ces styles CSS pour centrer le tableau et le titre h1 */
+/* Ajoutez ces styles CSS pour le tableau */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+
+}
+
+div h1 {
+  color: rgb(255, 255, 255); 
+  background-color: hsl(0, 0%, 100%, 0.5); 
+  border-radius: 5px;
+  padding: 5px;
+  border: solid 5px white;
+}
+
+table tr {
+  background-color: hsl(0, 0%, 100%, 0.5); 
+  border: solid 5px rgb(34, 189, 34);
+  border-radius: 56px;
+  padding: 5px;
+}
+
+#merci {
+  color: white;
+font-weight: bold;
+}
